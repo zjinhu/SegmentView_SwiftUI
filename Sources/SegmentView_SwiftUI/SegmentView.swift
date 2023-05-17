@@ -7,65 +7,55 @@
 
 import SwiftUI
 
-//class SegmentDataSource: ObservableObject {
-//    @Published
-//}
+public class SegmentDataSource: ObservableObject {
+    public init() {}
+    @Published public var selectIndex: Int = 0
+    @Published public var titles: [String] = []
+    @Published public var views: [AnyView] = []
+    
+    @Published public var segmentColor: Color = .orange
+    @Published public var indicatorColor: Color = .red
+    @Published public var indicatorHeight: CGFloat = 4
+    @Published public var indicatorWidth: CGFloat = 36
+    @Published public var indicatorPadding: CGFloat = 2
+    
+    @Published public var titleNor: Font = .system(size: 15, weight: .bold)
+    @Published public var titleSel: Font = .system(size: 20, weight: .bold)
+    @Published public var titleNorColor: Color = .white.opacity(0.5)
+    @Published public var titleSelColor: Color = .white
+}
 
-struct SegmentView: View {
-    @State var selection: Int = 0
+public struct SegmentView: View {
+    @EnvironmentObject var dataSource: SegmentDataSource
     
-    var titles: [String]
-    var views: [AnyView]
+    public init() {}
     
-    init(titles: [String], views: [AnyView]) {
-        self.titles = titles
-        self.views = views
-    }
-    
-    var body: some View {
-        
+    public var body: some View {
         VStack(spacing: 0){
-            SegmentScrollView(selection: $selection, items: titles)
+            SegmentScrollView()
             
-            TabView(selection: $selection)  {
+            TabView(selection: $dataSource.selectIndex)  {
                 
-                ForEach(0..<views.count, id: \.self) { idx in
-                    views[idx]
+                ForEach(0..<dataSource.views.count, id: \.self) { idx in
+                    dataSource.views[idx]
                         .tag(idx)
                 }
                 
             }
             .tabViewStyle(.page(indexDisplayMode: .never))
-//            .background(Color.pink)
         }
-        
     }
 }
-struct SegmentView_Previews: PreviewProvider {
-    static var previews: some View {
-        SegmentView(titles: ["Message",
-                             "Calls"],
-                    views: [AnyView(Text("1111")),
-                            AnyView(Text("2222"))])
-    }
-}
-
 
 struct SegmentScrollView: View {
-    @Binding private var selection: Int
-    private let  items: [String]
+    @EnvironmentObject var dataSource: SegmentDataSource
+    
     @State private var buttonFrames: [Int: CGRect] = [:]
     
     private var containerSpace: String {
         return "showBottomLine"
     }
-    
-    init(selection: Binding<Int>,
-         items: [String]) {
-        self._selection = selection
-        self.items = items
-    }
-    
+
     var body: some View {
         ScrollViewReader{ scrollView in
             ScrollView(.horizontal, showsIndicators: false) {
@@ -73,14 +63,14 @@ struct SegmentScrollView: View {
                     buttons()
                     
                     indicatorContainer()
-                        .padding(.bottom, 5)
+                        .padding(.bottom, dataSource.indicatorPadding)
                 }
                 .coordinateSpace(name: containerSpace)
             }
-            .background(Color.pink)
-            .onChange(of: selection, perform: { _ in
+            .background(dataSource.segmentColor)
+            .onChange(of: dataSource.selectIndex, perform: { _ in
                 withAnimation {
-                    scrollView.scrollTo(selection, anchor: .center)
+                    scrollView.scrollTo(dataSource.selectIndex, anchor: .center)
                 }
             })
         }
@@ -88,16 +78,16 @@ struct SegmentScrollView: View {
     
     private func buttons() -> some View {
         HStack(spacing: 0) {
-            ForEach(Array(items.enumerated()), id: \.offset) { obj in
+            ForEach(Array(dataSource.titles.enumerated()), id: \.offset) { obj in
                 Button {
                     withAnimation {
-                        selection = obj.offset
+                        dataSource.selectIndex = obj.offset
                     }
                 } label: {
                     Text(obj.element)
-                        .font(isSelected(index: obj.offset) ? .system(size: 20, weight: .bold)  : .system(size: 15, weight: .bold))
-                        .animation(.default, value: selection)
-                        .foregroundColor(isSelected(index: obj.offset) ? .white : .white.opacity(0.5))
+                        .font(isSelected(index: obj.offset) ? dataSource.titleSel : dataSource.titleNor)
+                        .animation(.default, value: dataSource.selectIndex)
+                        .foregroundColor(isSelected(index: obj.offset) ? dataSource.titleSelColor : dataSource.titleNorColor)
                         .padding(.horizontal, 20)
                         .padding(.vertical, 5)
                 }
@@ -112,20 +102,20 @@ struct SegmentScrollView: View {
     private func indicatorContainer() -> some View {
         Rectangle()
             .fill(Color.clear)
-            .frame(width: tabWidth(), height: 6)
+            .frame(width: tabWidth(), height: dataSource.indicatorHeight)
             .overlay(indicator(), alignment: .center)
-            .offset(x: selectionBarXOffset(), y: 0)
-            .animation(.default, value: selection)
+            .offset(x: selectionBarXOffset())
+            .animation(.default, value: dataSource.selectIndex)
     }
     
     private func indicator() -> some View {
         Capsule()
-            .fill(Color.white)
-            .frame(width: 32, height: 3)
+            .fill(dataSource.indicatorColor)
+            .frame(width: dataSource.indicatorWidth, height: dataSource.indicatorHeight)
     }
     
     private func sanitizedSelection() -> Int {
-        return max(0, min(items.count - 1, selection))
+        return max(0, min(dataSource.titles.count - 1, dataSource.selectIndex))
     }
     
     private func isSelected(index: Int) -> Bool {
@@ -137,7 +127,7 @@ struct SegmentScrollView: View {
     }
     
     private func indicatorWidth() -> CGFloat {
-        return max(tabWidth() - 32, .zero)
+        return max(tabWidth() - dataSource.indicatorWidth, .zero)
     }
     
     private func tabWidth() -> CGFloat {
@@ -147,7 +137,7 @@ struct SegmentScrollView: View {
 
 extension View {
     
-    public func readFrame(in space: CoordinateSpace, id: String = "BottomLine", onChange: @escaping (CGRect) -> Void) -> some View {
+    func readFrame(in space: CoordinateSpace, id: String = "BottomLine", onChange: @escaping (CGRect) -> Void) -> some View {
         background(
             GeometryReader { proxy in
                 Color

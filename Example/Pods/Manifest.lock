@@ -1,0 +1,16 @@
+PODS:
+  - SegmentView_SwiftUI (0.1.0)
+
+DEPENDENCIES:
+  - SegmentView_SwiftUI (from `../`)
+
+EXTERNAL SOURCES:
+  SegmentView_SwiftUI:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SegmentView_SwiftUI: 253daf2cd87bb1f27dcd79b2c007e61374633f0d
+
+PODFILE CHECKSUM: e5787ee615918e8b2114094967081f15f0f6e8d8
+
+COCOAPODS: 1.12.1

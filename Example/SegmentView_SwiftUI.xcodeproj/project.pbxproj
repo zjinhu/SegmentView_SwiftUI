@@ -3,155 +3,221 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		81CDEB7D2A0B5C06003D4F53 /* SegmentViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CDEB7C2A0B5C06003D4F53 /* SegmentViewApp.swift */; };
-		81CDEB7F2A0B5C06003D4F53 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CDEB7E2A0B5C06003D4F53 /* ContentView.swift */; };
-		81CDEB812A0B5C08003D4F53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81CDEB802A0B5C08003D4F53 /* Assets.xcassets */; };
-		81CDEB852A0B5C08003D4F53 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81CDEB842A0B5C08003D4F53 /* Preview Assets.xcassets */; };
-		81CDEB8C2A0B5C18003D4F53 /* SegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CDEB8B2A0B5C18003D4F53 /* SegmentView.swift */; };
+		815DC61C2A0DEF5500DCE83D /* ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815DC61B2A0DEF5500DCE83D /* ExampleApp.swift */; };
+		815DC61E2A0DEF5500DCE83D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815DC61D2A0DEF5500DCE83D /* ContentView.swift */; };
+		815DC6202A0DEF5600DCE83D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 815DC61F2A0DEF5600DCE83D /* Assets.xcassets */; };
+		815DC6242A0DEF5600DCE83D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 815DC6232A0DEF5600DCE83D /* Preview Assets.xcassets */; };
+		D579E1B7CB81DD29B57DCE42 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C1EC59122A251130408D8E8 /* Pods_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		81CDEB792A0B5C06003D4F53 /* SegmentView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SegmentView.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		81CDEB7C2A0B5C06003D4F53 /* SegmentViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentViewApp.swift; sourceTree = "<group>"; };
-		81CDEB7E2A0B5C06003D4F53 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		81CDEB802A0B5C08003D4F53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		81CDEB822A0B5C08003D4F53 /* SegmentView.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SegmentView.entitlements; sourceTree = "<group>"; };
-		81CDEB842A0B5C08003D4F53 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		81CDEB8B2A0B5C18003D4F53 /* SegmentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentView.swift; sourceTree = "<group>"; };
+		0C32FCD6A9F47A6FF3732D6D /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		66F6D5A4DF70FC66F9BC2FAD /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
+		7C1EC59122A251130408D8E8 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		815DC6182A0DEF5500DCE83D /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		815DC61B2A0DEF5500DCE83D /* ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleApp.swift; sourceTree = "<group>"; };
+		815DC61D2A0DEF5500DCE83D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		815DC61F2A0DEF5600DCE83D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		815DC6212A0DEF5600DCE83D /* SegmentView_SwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SegmentView_SwiftUI.entitlements; sourceTree = "<group>"; };
+		815DC6232A0DEF5600DCE83D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		815DC6772A0E3DE100DCE83D /* Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Example-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		81CDEB762A0B5C06003D4F53 /* Frameworks */ = {
+		815DC6152A0DEF5500DCE83D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D579E1B7CB81DD29B57DCE42 /* Pods_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		81CDEB702A0B5C06003D4F53 = {
+		815DC60F2A0DEF5500DCE83D = {
 			isa = PBXGroup;
 			children = (
-				81CDEB7B2A0B5C06003D4F53 /* SegmentView */,
-				81CDEB7A2A0B5C06003D4F53 /* Products */,
+				815DC6772A0E3DE100DCE83D /* Example-Info.plist */,
+				815DC61A2A0DEF5500DCE83D /* SegmentView_SwiftUI */,
+				815DC6192A0DEF5500DCE83D /* Products */,
+				D9E9D41B56729365D10C1479 /* Pods */,
+				CFBF3A8CB84699E4B6FAA338 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		81CDEB7A2A0B5C06003D4F53 /* Products */ = {
+		815DC6192A0DEF5500DCE83D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				81CDEB792A0B5C06003D4F53 /* SegmentView.app */,
+				815DC6182A0DEF5500DCE83D /* Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		81CDEB7B2A0B5C06003D4F53 /* SegmentView */ = {
+		815DC61A2A0DEF5500DCE83D /* SegmentView_SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				81CDEB7C2A0B5C06003D4F53 /* SegmentViewApp.swift */,
-				81CDEB7E2A0B5C06003D4F53 /* ContentView.swift */,
-				81CDEB8B2A0B5C18003D4F53 /* SegmentView.swift */,
-				81CDEB802A0B5C08003D4F53 /* Assets.xcassets */,
-				81CDEB822A0B5C08003D4F53 /* SegmentView.entitlements */,
-				81CDEB832A0B5C08003D4F53 /* Preview Content */,
+				815DC61B2A0DEF5500DCE83D /* ExampleApp.swift */,
+				815DC61D2A0DEF5500DCE83D /* ContentView.swift */,
+				815DC61F2A0DEF5600DCE83D /* Assets.xcassets */,
+				815DC6212A0DEF5600DCE83D /* SegmentView_SwiftUI.entitlements */,
+				815DC6222A0DEF5600DCE83D /* Preview Content */,
 			);
-			path = SegmentView;
+			path = SegmentView_SwiftUI;
 			sourceTree = "<group>";
 		};
-		81CDEB832A0B5C08003D4F53 /* Preview Content */ = {
+		815DC6222A0DEF5600DCE83D /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				81CDEB842A0B5C08003D4F53 /* Preview Assets.xcassets */,
+				815DC6232A0DEF5600DCE83D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CFBF3A8CB84699E4B6FAA338 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C1EC59122A251130408D8E8 /* Pods_Example.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9E9D41B56729365D10C1479 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C32FCD6A9F47A6FF3732D6D /* Pods-Example.debug.xcconfig */,
+				66F6D5A4DF70FC66F9BC2FAD /* Pods-Example.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		81CDEB782A0B5C06003D4F53 /* SegmentView */ = {
+		815DC6172A0DEF5500DCE83D /* Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 81CDEB882A0B5C08003D4F53 /* Build configuration list for PBXNativeTarget "SegmentView" */;
+			buildConfigurationList = 815DC6272A0DEF5600DCE83D /* Build configuration list for PBXNativeTarget "Example" */;
 			buildPhases = (
-				81CDEB752A0B5C06003D4F53 /* Sources */,
-				81CDEB762A0B5C06003D4F53 /* Frameworks */,
-				81CDEB772A0B5C06003D4F53 /* Resources */,
+				A4218610E99C8C947C17E2B1 /* [CP] Check Pods Manifest.lock */,
+				815DC6142A0DEF5500DCE83D /* Sources */,
+				815DC6152A0DEF5500DCE83D /* Frameworks */,
+				815DC6162A0DEF5500DCE83D /* Resources */,
+				8F356A534442DE7FD827A291 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SegmentView;
-			productName = SegmentView;
-			productReference = 81CDEB792A0B5C06003D4F53 /* SegmentView.app */;
+			name = Example;
+			productName = SegmentView_SwiftUI;
+			productReference = 815DC6182A0DEF5500DCE83D /* Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		81CDEB712A0B5C06003D4F53 /* Project object */ = {
+		815DC6102A0DEF5500DCE83D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					81CDEB782A0B5C06003D4F53 = {
+					815DC6172A0DEF5500DCE83D = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
 			};
-			buildConfigurationList = 81CDEB742A0B5C06003D4F53 /* Build configuration list for PBXProject "SegmentView" */;
-			compatibilityVersion = "Xcode 14.0";
+			buildConfigurationList = 815DC6132A0DEF5500DCE83D /* Build configuration list for PBXProject "SegmentView_SwiftUI" */;
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 81CDEB702A0B5C06003D4F53;
-			productRefGroup = 81CDEB7A2A0B5C06003D4F53 /* Products */;
+			mainGroup = 815DC60F2A0DEF5500DCE83D;
+			productRefGroup = 815DC6192A0DEF5500DCE83D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				81CDEB782A0B5C06003D4F53 /* SegmentView */,
+				815DC6172A0DEF5500DCE83D /* Example */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		81CDEB772A0B5C06003D4F53 /* Resources */ = {
+		815DC6162A0DEF5500DCE83D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81CDEB852A0B5C08003D4F53 /* Preview Assets.xcassets in Resources */,
-				81CDEB812A0B5C08003D4F53 /* Assets.xcassets in Resources */,
+				815DC6242A0DEF5600DCE83D /* Preview Assets.xcassets in Resources */,
+				815DC6202A0DEF5600DCE83D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8F356A534442DE7FD827A291 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4218610E99C8C947C17E2B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		81CDEB752A0B5C06003D4F53 /* Sources */ = {
+		815DC6142A0DEF5500DCE83D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81CDEB7F2A0B5C06003D4F53 /* ContentView.swift in Sources */,
-				81CDEB8C2A0B5C18003D4F53 /* SegmentView.swift in Sources */,
-				81CDEB7D2A0B5C06003D4F53 /* SegmentViewApp.swift in Sources */,
+				815DC61E2A0DEF5500DCE83D /* ContentView.swift in Sources */,
+				815DC61C2A0DEF5500DCE83D /* ExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		81CDEB862A0B5C08003D4F53 /* Debug */ = {
+		815DC6252A0DEF5600DCE83D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -201,6 +267,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -209,7 +277,7 @@
 			};
 			name = Debug;
 		};
-		81CDEB872A0B5C08003D4F53 /* Release */ = {
+		815DC6262A0DEF5600DCE83D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -253,6 +321,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -260,19 +330,20 @@
 			};
 			name = Release;
 		};
-		81CDEB892A0B5C08003D4F53 /* Debug */ = {
+		815DC6282A0DEF5600DCE83D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C32FCD6A9F47A6FF3732D6D /* Pods-Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = SegmentView/SegmentView.entitlements;
+				CODE_SIGN_ENTITLEMENTS = SegmentView_SwiftUI/SegmentView_SwiftUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SegmentView/Preview Content\"";
-				DEVELOPMENT_TEAM = 2H98YDVC78;
-				ENABLE_HARDENED_RUNTIME = YES;
+				CURRENT_SegmentView_SwiftUI_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SegmentView_SwiftUI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Example-Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -283,12 +354,12 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 12.6;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.chat.muma.SegmentView;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hu.app.SegmentView_SwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -298,19 +369,20 @@
 			};
 			name = Debug;
 		};
-		81CDEB8A2A0B5C08003D4F53 /* Release */ = {
+		815DC6292A0DEF5600DCE83D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66F6D5A4DF70FC66F9BC2FAD /* Pods-Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = SegmentView/SegmentView.entitlements;
+				CODE_SIGN_ENTITLEMENTS = SegmentView_SwiftUI/SegmentView_SwiftUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SegmentView/Preview Content\"";
-				DEVELOPMENT_TEAM = 2H98YDVC78;
-				ENABLE_HARDENED_RUNTIME = YES;
+				CURRENT_SegmentView_SwiftUI_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SegmentView_SwiftUI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Example-Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -321,12 +393,12 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 12.6;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.chat.muma.SegmentView;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hu.app.SegmentView_SwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -339,25 +411,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		81CDEB742A0B5C06003D4F53 /* Build configuration list for PBXProject "SegmentView" */ = {
+		815DC6132A0DEF5500DCE83D /* Build configuration list for PBXProject "SegmentView_SwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				81CDEB862A0B5C08003D4F53 /* Debug */,
-				81CDEB872A0B5C08003D4F53 /* Release */,
+				815DC6252A0DEF5600DCE83D /* Debug */,
+				815DC6262A0DEF5600DCE83D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		81CDEB882A0B5C08003D4F53 /* Build configuration list for PBXNativeTarget "SegmentView" */ = {
+		815DC6272A0DEF5600DCE83D /* Build configuration list for PBXNativeTarget "Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				81CDEB892A0B5C08003D4F53 /* Debug */,
-				81CDEB8A2A0B5C08003D4F53 /* Release */,
+				815DC6282A0DEF5600DCE83D /* Debug */,
+				815DC6292A0DEF5600DCE83D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 81CDEB712A0B5C06003D4F53 /* Project object */;
+	rootObject = 815DC6102A0DEF5500DCE83D /* Project object */;
 }
