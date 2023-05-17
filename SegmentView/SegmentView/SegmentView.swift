@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+//class SegmentDataSource: ObservableObject {
+//    @Published
+//}
+
 struct SegmentView: View {
     @State var selection: Int = 0
     
