@@ -10,7 +10,7 @@ import SegmentView_SwiftUI
 struct ContentView: View {
 
     var body: some View {
-        SegmentView(selectIndex: 1,
+        SegmentView(selectIndex: 0,
                     titles: ["Home","Second"],
                     indicatorColor: .blue) { title in
             Text("\(title)")

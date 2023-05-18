@@ -1,6 +1,5 @@
 # SegmentView_SwiftUI
 
-
 [![SPM](https://img.shields.io/badge/SPM-supported-DE5C43.svg?style=flat)](https://swift.org/package-manager/)
 ![Xcode 14.0+](https://img.shields.io/badge/Xcode-14.0%2B-blue.svg)
 ![iOS 14.0+](https://img.shields.io/badge/iOS-14.0%2B-blue.svg)
@@ -9,9 +8,36 @@
 
 ## 例子
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+根据分段标题数组合成Page页面，替换Text为你自己的View即可
 
-## 要求
+```swift
+SegmentView(selectIndex: 0,
+            titles: ["Home","Second"],
+            indicatorColor: .blue) { title in
+    Text("\(title)")
+}
+```
+
+可以在创建之初自定义基本样式
+
+```swift
+                segmentBackColor: Color = .white,
+                segmentPaddingHorizontal: CGFloat = 20,
+                segmentPaddingVertical: CGFloat = 5,
+                indicatorColor: Color = .red,
+                indicatorHeight: CGFloat = 4,
+                indicatorWidth: CGFloat = 36,
+                indicatorPaddingBottom: CGFloat = 2,
+                titleUnSelectedFont: Font = .system(size: 15, weight: .bold),
+                titleSelectedFont: Font = .system(size: 20, weight: .bold),
+                titleUnSelectedColor: Color = .black.opacity(0.5),
+                titleSelectedColor: Color = .black,
+```
+
+
+
+| ![](Image/1.png) | ![](Image/2.png) |
+| ---------------- | ---------------- |
 
 
 ## 安装
