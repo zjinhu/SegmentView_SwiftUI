@@ -8,17 +8,13 @@
 import SwiftUI
 import SegmentView_SwiftUI
 struct ContentView: View {
-    @StateObject var data = SegmentDataSource()
-    
+
     var body: some View {
-        SegmentView()
-            .environmentObject(data)
-            .onAppear{
-                data.titles = ["1","2","3"]
-                data.views = [AnyView(Text("1")),
-                              AnyView(Text("2")),
-                              AnyView(Text("3"))]
-            }
+        SegmentView(selectIndex: 1,
+                    titles: ["Home","Second"],
+                    indicatorColor: .blue) { title in
+            Text("\(title)")
+        }
     }
 }
 
